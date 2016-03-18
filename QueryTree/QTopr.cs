@@ -71,9 +71,6 @@ namespace test1
 			case 0:
 				Console.WriteLine ("{0} -- {1}-- no response", times, str);
 				return;
-			case -1:
-				Console.WriteLine ("{0} -- {1} -- {2}", times, str, mstr);
-				return;
 			case 1:
 				Console.WriteLine ("{0} -- {1} -- {2}", times, str, mstr);
 				return;
@@ -95,7 +92,7 @@ namespace test1
 				bool m_bool = true;
 				if (s.Equals (str)) {
 					mstr = str;
-					return -1;
+					return 1;
 				}
 				for (int i = 0; i < s.Length; i++) {
 					if (!str [i].Equals (s [i])) {
